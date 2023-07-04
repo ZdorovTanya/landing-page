@@ -1,0 +1,17 @@
+@import "../css/_fonts.css";
+@import "../css/_reset.css";
+/* @import "../css/_ui.css"; */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+.container {
+  max-width: 1280px;
+  padding: 0px 85px;
+  /* padding-inline: 15px; */
+  margin: 0 auto;
+}
