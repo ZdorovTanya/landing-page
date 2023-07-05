@@ -7,16 +7,18 @@
 .wrapper {
 }
 .section {
-  overflow: hidden;
-  margin-top: 5rem;
+  /* overflow: hidden;
+  margin-top: 5rem; */
+  @apply overflow-hidden mt-20;
 }
 
 @media (min-width: 793px){
   .section {
-    display:flex;
+    /* display:flex; */
+    @apply flex;
   }
 }
-.section__content {
+/* .section__content {
   flex: 0 0 100%;
   display: flex;
 }
@@ -29,16 +31,27 @@
   align-items: center;
 }
 .section__body {
-  /* width: 50%; */
   padding: 162px 0px 0px 0px;
+} */
+
+.section__content {
+  @apply flex-[0_0_100%] flex;
 }
+.section__container {
+  @apply max-w-[1365px] flex items-center mx-auto my-0 px-[5.3125rem] py-0;
+}
+.section__body {
+  @apply pt-[162px] pb-0 px-0;
+}
+
 @media (min-width: 793px){
   .section__body {
-    width: 50%;
-    padding: 50px 30px 50px 0px;
+    /* width: 50%;
+    padding: 50px 30px 50px 0px; */
+    @apply w-6/12 pl-0 pr-[30px] py-[50px];
   }
 }
-.section__title {
+/* .section__title {
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
@@ -65,14 +78,28 @@
   background-color: #7E3AF2;
   display: inline-block;
   margin: -24px 0px 0px 0px;
+} */
+
+.section__title {
+  @apply font-bold text-6xl leading-[90px];
+}
+.section__description {
+  @apply text-xl leading-[30px] text-[#696969];
+}
+.section__text {
+  @apply relative text-xl leading-[30px] text-[#696969] mt-[5.75rem] mb-[3.75rem] before:content-[""] before:absolute before:w-[25px] before:h-[3px] before:bg-[#7E3AF2] before:inline-block before:-mt-6 before:mb-0 before:mx-0;
 }
 
-.section__image {
+/* .section__image {
   max-width: 100%;
+} */
+
+.section__image {
+  @apply max-w-full;
 }
 
 @media (min-width: 793px){
-  .section__image {
+  /* .section__image {
     flex: 0 0 50%;
     transform: translate(-100%, 0px);
     padding: 0px 0px 44% 0px;
@@ -84,6 +111,11 @@
     height: 100%;
     top: 0;
     left: 0;
-    /* object-fit: cover; */
+  } */
+  .section__image {
+    @apply flex-[0_0_50%] -translate-x-full translate-y-0 relative pt-0 pb-[44%] px-0;
+  }
+  .section__image img {
+    @apply absolute w-full h-full left-0 top-0;
   }
 }
