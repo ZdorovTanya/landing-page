@@ -1,0 +1,33 @@
+.btn-tg {
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background: #7e3af2;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+    padding: 13px 25px 13px 25px;
+  }
+  
+  .btn-text,
+  .btn-icon {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    height: 100%;
+  }
+  
+  .btn-icon {
+    margin-left: 12px;
+  }
+  
+  .btn-icon svg path {
+    fill: #fff;
+    stroke: #7e3af2;
+  }
+  
