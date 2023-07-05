@@ -8,6 +8,7 @@
 }
 .section {
   overflow: hidden;
+  margin-top: 5rem;
 }
 
 @media (min-width: 793px){
@@ -21,7 +22,7 @@
 }
 .section__container {
   max-width: 1365px;
-  padding: 0px 85px;
+  padding: 0px 5.3125rem;
   margin: 0px auto;
 
   display: flex;
@@ -47,10 +48,25 @@
   line-height: 30px;
   color: #696969;
 }
-.text {
+
+.section__text{
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  color: #696969;
   margin-top: 5.75rem;
   margin-bottom: 3.75rem;
 }
+.section__text::before{
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #7E3AF2;
+  display: inline-block;
+  margin: -24px 0px 0px 0px;
+}
+
 .section__image {
   max-width: 100%;
 }
@@ -59,7 +75,7 @@
   .section__image {
     flex: 0 0 50%;
     transform: translate(-100%, 0px);
-    padding: 0px 0px 49% 0px;
+    padding: 0px 0px 44% 0px;
     position: relative;
   }
   .section__image img{

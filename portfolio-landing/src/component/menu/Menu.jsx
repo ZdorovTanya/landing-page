@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import "./Menu.css";
+import "../../js/burger.js";
 
 
 function Menu() {
@@ -7,32 +8,32 @@ function Menu() {
 
   return (
     <>
-      <header class="header">
-        <div class="container">
-          <div class="header__body">
-            <a href="#" class="header__logo">
-              <img src="logo.svg" alt="" />
+      <header className="header">
+        <div className="container">
+          <div className="header__body">
+            <a href="#" className="header__logo">
+              <img src="/public/img/Logo.svg" alt="" />
             </a>
 
-            <div class="header__burger">
+            <div className="header__burger">
               <span></span>
             </div>
 
-            <nav class="header__menu">
-              <ul class="header__list">
+            <nav className="header__menu">
+              <ul className="header__list">
                 <li>
-                  <a href="" class="header__link">
-                    Главная
+                  <a href="" className="header__link">
+                    Main
                   </a>
                 </li>
                 <li>
-                  <a href="" class="header__link">
-                    Тесты
+                  <a href="" className="header__link">
+                    About
                   </a>
                 </li>
                 <li>
-                  <a href="" class="header__link">
-                    Форум
+                  <a href="" className="header__link">
+                    Get in touch
                   </a>
                 </li>
               </ul>
