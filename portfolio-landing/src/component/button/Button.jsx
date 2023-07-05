@@ -4,9 +4,9 @@ import "./Button.css";
 function Button() {
 //   const [count, setCount] = useState(0);
 
-  return (
+  return ( 
     <>
-      <button type="button" className="btn-tg">
+      <button disabled type="button" className="btn-tg">
         <span className="btn-text">Get in touch</span>
         <span className="btn-icon">
           <svg
