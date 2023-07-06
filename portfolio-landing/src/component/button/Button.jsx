@@ -6,7 +6,7 @@ function Button() {
 
   return ( 
     <>
-      <button disabled type="button" className="btn-tg">
+      <button type="button" className="btn-tg">
         <span className="btn-text">Get in touch</span>
         <span className="btn-icon">
           <svg

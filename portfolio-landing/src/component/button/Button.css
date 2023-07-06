@@ -1,54 +1,69 @@
 .btn-tg {
-    display: inline-flex;
-    height: 50px;
-    padding: 0;
-    background: #7e3af2;
-    border: none;
-    outline: none;
-    border-radius: 50px; 
-    overflow: hidden;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    cursor: pointer;
-    padding: 13px 25px 13px 25px;
-  }
-
-.btn-tg:hover{
-  background: #6C2BD9;
-}
-.btn-tg:active{
-  border: 3px solid #CABFFD;
+  display: inline-flex;
+  height: 50px;
+  background: #7e3af2;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+  padding: 13px 25px 13px 25px;
 }
 
+.btn-tg:hover {
+  background: #6c2bd9;
+}
+.btn-tg:active {
+  border: 3px solid #cabffd;
+}
 
-  .btn-text,
-  .btn-icon {
-    display: inline-flex;
-    align-items: center;
-    color: #fff;
-    height: 100%;
+.btn-text,
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  height: 100%;
+}
+
+.btn-icon {
+  margin-left: 12px;
+}
+
+.btn-icon svg path {
+  fill: #fff;
+  stroke: #7e3af2;
+}
+
+.btn-tg:disabled {
+  background: #e5e7eb;
+  cursor: not-allowed;
+  /* color: #696969; */
+}
+.btn-tg:disabled .btn-text {
+  color: #696969;
+}
+.btn-tg:disabled .btn-icon svg path {
+  fill: #696969;
+  stroke: #e5e7eb;
+}
+
+@media (max-width: 793px) {
+  .btn-tg {
+    height: 39px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 9px 13px;
   }
   
+
   .btn-icon {
-    margin-left: 12px;
+    margin-left: 8px;
   }
-  
   .btn-icon svg path {
-    fill: #fff;
-    stroke: #7e3af2;
+    height: 12px;
   }
-  
-  .btn-tg:disabled{
-    background: #E5E7EB;
-    cursor: not-allowed;
-    /* color: #696969; */
-  }
-  .btn-tg:disabled .btn-text{
-    color: #696969;
-  }
-  .btn-tg:disabled .btn-icon svg path{
-    fill: #696969;
-    stroke: #E5E7EB;
-  }
-    
+}
+
