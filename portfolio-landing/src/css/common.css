@@ -13,3 +13,8 @@ body {
   @apply overflow-hidden min-h-full;
 }
 
+.container {
+  max-width: 1365px;
+  padding: 0px 5.3125rem;
+  margin: 0px auto;
+}
