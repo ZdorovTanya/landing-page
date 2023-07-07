@@ -4,6 +4,7 @@ import "./Home.css";
 import Button from "../button/Button.jsx";
 import Form from "../form/Form.jsx";
 import Menu from "../menu/Menu.jsx";
+import Footer from "../footer/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -186,9 +187,7 @@ function App() {
           </div>
         </section>
         <Form />
-        <h4 className="footer text container">
-          © 2022 JetRuby. All Rights Reserved
-        </h4>
+        <Footer />
       </div>
     </>
   );
