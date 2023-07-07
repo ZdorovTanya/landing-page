@@ -64,6 +64,10 @@
     font-weight: 600;
 }
 
+.header__link:hover{
+    color: #7E3AF2;
+}
+
 /* все что меньше 767 будет бургером */
 
 @media(max-width:793px){
@@ -152,3 +156,9 @@
     }
 }
 
+@media (max-width: 793px) {
+    .container {
+      padding: 0px 15px;
+    }
+  }
+  

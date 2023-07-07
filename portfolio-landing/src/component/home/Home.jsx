@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Home.css";
 
 import Button from "../button/Button.jsx";
+import Form from "../form/Form.jsx";
 import Menu from "../menu/Menu.jsx";
 
 function App() {
@@ -15,9 +16,9 @@ function App() {
           <div className="section__content">
             <div className="section__container">
               <div className="section__body">
-                <h1 className="section__title">Hey, I’m Nick</h1>
-                <div className="section__description">Frontend developer</div>
-                <div className="section__text">
+                <h1>Hey, I’m Nick</h1>
+                <div className="section__description text">Frontend developer</div>
+                <div className="section__text text">
                   <span>
                     Help you to create high-quality digital products that your
                     clients will love and let your business thrive
@@ -29,17 +30,21 @@ function App() {
           </div>
           <div className="section__image">
             <img src="/public/img/photo/main-photo.svg" alt="" />
+            <div className="tr-bg-img">
+              <img src="/public/img/bc/big_background.svg" alt="" />
+            </div>
           </div>
         </section>
 
-        <section className="section">
-          <div className="section__image round">
-            <img src="/public/img/photo/round-photo.svg" alt="" />
+        <h2 className="container swm">About me</h2>
+        <section className="section swm">
+          <div className="section__image round container">
+            <img src="/public/img/bc/photo__round.svg" alt="" />
           </div>
           <div className="section__content">
             <div className="section__container about__container">
               <div className="section__body about__body">
-                <div className="section__text">
+                <div className="section__text text">
                   <span>
                     <p>
                       <strong>Nick Richardson</strong> - specialist in Frontend
@@ -57,8 +62,9 @@ function App() {
         <section className="section">
           <div className="section__content">
             <div className="section__container">
+              <div className="ed-in__row">
               <div className="section__body">
-                <h3>Interests</h3>
+                <h3 className="swm">Interests</h3>
                 <div className="section__interests">
                   <div className="circle">
                     <svg
@@ -78,8 +84,8 @@ function App() {
                   </div>
 
                   <div className="section__education__row">
-                    <div className="section__about__title">Music</div>
-                    <div className="section__about__text">
+                    <div className="section__about__title text">Music</div>
+                    <div className="section__about__text text">
                       Indie rock | Reggae
                     </div>
                   </div>
@@ -103,8 +109,8 @@ function App() {
                   </div>
 
                   <div className="section__education__row">
-                    <div className="section__about__title">Art</div>
-                    <div className="section__about__text">
+                    <div className="section__about__title text">Art</div>
+                    <div className="section__about__text text">
                       Edvard Munch | Frida Kahlo
                     </div>
                   </div>
@@ -128,49 +134,61 @@ function App() {
                   </div>
 
                   <div className="section__education__row">
-                    <div className="section__about__title">Photography</div>
-                    <div className="section__about__text">Portraits</div>
+                    <div className="section__about__title text">Photography</div>
+                    <div className="section__about__text text">Portraits</div>
                   </div>
                 </div>
               </div>
 
               <div className="section__body">
-                <h3>Education & Experience</h3>
+
+                <h3 className="swm">Education & Experience</h3>
 
                 <div className="section__education">
                   <div className="ed__row">
-                  <div className="education__year">2008 - Present</div>
-                  <div className="educaion__row">
-                    <div className="section__about__title">Middle Frontend developer</div>
-                    <div className="section__about__text">Ozon</div>
+                    <div className="education__year text">2008 - Present</div>
+                    <div className="educaion__row">
+                      <div className="section__about__title text">
+                        Middle Frontend developer
+                      </div>
+                      <div className="section__about__text text">Ozon</div>
+                    </div>
                   </div>
-                  </div>
-               
                 </div>
                 <div className="section__education">
                   <div className="ed__row">
-                  <div className="education__year">2006 - 2007</div>
-                  <div className="educaion__row">
-                    <div className="section__about__title">Frontend development courses</div>
-                    <div className="section__about__text">Stepik</div>
+                    <div className="education__year text">2006 - 2007</div>
+                    <div className="educaion__row">
+                      <div className="section__about__title text">
+                        Frontend development courses
+                      </div>
+                      <div className="section__about__text text">Stepik</div>
+                    </div>
                   </div>
-                  </div>
-                
                 </div>
                 <div className="section__education">
                   <div className="ed__row">
-                  <div className="education__year">2000 - 2005</div>
-                  <div className="educaion__row">
-                    <div className="section__about__title">Frontend developer</div>
-                    <div className="section__about__text">Saint Petersburg State University</div>
+                    <div className="education__year text">2000 - 2005</div>
+                    <div className="educaion__row">
+                      <div className="section__about__title text">
+                        Frontend developer
+                      </div>
+                      <div className="section__about__text tex">
+                        Saint Petersburg State University
+                      </div>
+                    </div>
                   </div>
                 </div>
-                  </div>
-                 
               </div>
+              </div>
+           
             </div>
           </div>
         </section>
+        <Form />
+        <h4 className="footer text container">
+          © 2022 JetRuby. All Rights Reserved
+        </h4>
       </div>
     </>
   );
