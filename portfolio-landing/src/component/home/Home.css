@@ -1,175 +1,117 @@
-::-webkit-scrollbar { width: 0;}
+::-webkit-scrollbar {
+  width: 0;
+}
 
 .container {
-  max-width: 1365px;
-  padding: 0px 5.3125rem;
-  margin: 0px auto;
+  @apply max-w-[1365px] mx-auto my-0 px-[5.3125rem] py-0;
 }
 .section {
-  overflow: hidden;
-  margin-top: 5rem;
+  @apply overflow-hidden mt-20;
 }
 .swm {
-  margin-top: 40px;
+  @apply mt-10;
 }
 @media (min-width: 793px) {
   .section {
-    display: flex;
+    @apply flex;
   }
   .swm {
-    /* margin-top: 80px; */
-    padding: 0px 5.3125rem;
+    @apply px-[5.3125rem] py-0;
   }
 }
 .section__content {
-  flex: 0 0 100%;
+  @apply flex-[0_0_100%];
 }
-
 .section__container {
-  max-width: 1365px;
-  padding: 0px 5.3125rem;
-  margin: 0px auto;
-
-  display: flex;
-  align-items: center;
+  @apply max-w-[1365px] flex items-center mx-auto my-0 px-[5.3125rem] py-0;
 }
-
 .section__body {
-  z-index: 1;
+  @apply z-[1];
 }
+
 @media (min-width: 793px) {
   .section__body {
-    width: 50%;
-    padding: 50px 30px 50px 0px;
+    @apply w-6/12 pl-0 pr-[30px] py-[50px];
   }
-
-  .pl{
-    padding-left: 30px;
+  .pl {
+    @apply pl-[30px];
   }
   .about__container {
-    padding: 0px 0px;
+    @apply p-0;
   }
   .ed-in__row {
-    display: flex;
+    @apply flex;
   }
 }
 
 .section__description {
-  color: #696969;
-  padding-bottom: 38px;
+  @apply text-[#696969] pb-[38px];
 }
 .section__text {
-  position: relative;
-  color: #696969;
-  margin-top: 5.75rem;
-  margin-bottom: 3.75rem;
+  @apply relative text-[#696969] mt-[5.75rem] mb-[3.75rem] before:content-[""] before:absolute before:w-[25px] before:h-[3px] before:bg-[#7e3af2] before:inline-block before:mt-[-1.625rem] before:mb-0 before:mx-0;
 }
 .section__text p strong {
-  color: black;
+  @apply text-[black];
 }
-.section__text::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 3px;
-  background-color: #7e3af2;
-  display: inline-block;
-  margin: -1.625rem 0px 0px 0px;
-}
+
 @media (max-width: 793px) {
   .section__text {
-    margin-top: 38px;
-    margin-bottom: 27px;
+    @apply mt-[38px] mb-[27px];
   }
   .section__container {
-    padding: 0px 15px;
-    margin: 0px auto;
+    @apply mx-auto my-0 px-[15px] py-0;
   }
 }
-
 .section__about__title {
-  font-weight: 600;
+  @apply font-semibold;
 }
-
 .section__about__text {
-  color: #27272a;
+  @apply text-zinc-800;
 }
-
 .section__image {
-  max-width: 100%;
-  position: relative;
+  @apply max-w-full relative;
 }
 .section__image img {
-  position: relative;
-  z-index: 20;
+  @apply relative z-20;
 }
 .tr-bg-img {
-  padding: 90px 0px 0px 120px;
-  z-index: 10;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  @apply z-10 absolute w-full h-full pl-[120px] pr-0 pt-[90px] pb-0 left-0 top-0;
 }
 .tr-bg-img img {
-  height: 100%;
-  width: 100%;
-  object-fit: fill;
+  @apply h-full w-full object-fill;
 }
+
 @media (min-width: 793px) {
   .section__image {
-    flex: 0 0 50%;
-    transform: translate(-100%, 0px);
-    padding: 0px 0px 44% 0px;
-    position: relative;
+    @apply flex-[0_0_50%] -translate-x-full translate-y-0 relative pt-0 pb-[44%] px-0;
   }
   .round {
-    flex: 0 0 50%;
-    transform: translate(0px, 0px);
-    padding: 0px 0px 20% 0px;
-    position: relative;
+    @apply flex-[0_0_50%] translate-x-0 translate-y-0 relative pt-0 pb-[20%] px-0;
   }
-
   .round img {
-    width: 100%;
-    height: 100%;
+    @apply w-full h-full;
   }
   .section__image img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    @apply absolute w-full h-full left-0 top-0;
   }
 }
 
 /* --------------- */
 .section__interests {
-  display: flex;
-  margin-top: 44px;
+  @apply flex mt-11;
 }
-
 .circle {
+  @apply flex w-[60px] h-[60px] justify-center items-center mr-4 rounded-[50%] border-2 border-solid border-[#7e3af2];
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
-  display: flex;
-  border: 2px solid #7e3af2;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  justify-content: center;
   -ms-align-items: center;
-  align-items: center;
-  margin-right: 16px;
+}
+.circle svg path {
+  @apply fill-[#7e3af2] stroke-[#7e3af2];
 }
 
-.circle svg path {
-  fill: #7e3af2;
-  stroke: #7e3af2;
-}
 
 .section__education {
   display: inline-block;
