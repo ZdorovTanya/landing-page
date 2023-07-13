@@ -44,7 +44,7 @@ function App() {
           </div>
           <div className="section__content">
             <div className="section__container about__container">
-              <div className="section__body about__body">
+              <div className="section__body about__body pl">
                 <div className="section__text text">
                   <span>
                     <p>
