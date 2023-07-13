@@ -33,7 +33,7 @@
 .req::after {
   content: " *";
   color: #e9573f;
-}
+} 
 
 .one__row {
   display: flex;
@@ -67,6 +67,7 @@ input {
 }
 
 .col-75,
+.error,
 textarea {
   width: 100%;
   padding: 13px 20px;
@@ -146,7 +147,11 @@ textarea {
   line-height: 24px;
 }
 
-.col-75 {
+.col-75, .error {
   display: flex;
   align-items: center;
+}
+
+.error{
+  border-color: red;
 }

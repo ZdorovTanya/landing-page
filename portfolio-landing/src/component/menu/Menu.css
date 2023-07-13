@@ -7,7 +7,7 @@
     z-index: 100;
     border-bottom: 1px solid #E5E7EB;
 }
-
+ 
 .header:before{
     content: "";
     position: absolute;
@@ -28,7 +28,6 @@
 }
 .header__logo {
     flex: 0 0 2.0625rem;
-    /* border-radius: 50%; */
     overflow: hidden;
     background-color: #fff;
     position: relative;

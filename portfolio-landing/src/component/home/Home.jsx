@@ -30,7 +30,7 @@ function App() {
             </div>
           </div>
           <div className="section__image">
-            <img src="/public/img/photo/main-photo.svg" alt="" />
+            <img src="/public/img/photo/main-photo.svg" alt="web" />
             <div className="tr-bg-img">
               <img src="/public/img/bc/big_background.svg" alt="" />
             </div>
